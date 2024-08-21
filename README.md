@@ -1,4 +1,4 @@
-# React A/B Testing with IP-Based Form Assignment
+# React A/B Testing with IP-Based Form
 
 ## Overview
 This project demonstrates A/B testing in a React application by presenting two different versions of a registration form. The version displayed to the user is determined by a hash function applied to the user's IP address. The selected version is saved and persisted using Redux, ensuring consistency for the user across sessions. Even if the user's IP address changes, they will see the same form unless they manually clear their cache/local storage and change their IP.
