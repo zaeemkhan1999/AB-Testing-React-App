@@ -17,8 +17,7 @@ This project demonstrates A/B testing in a React application by presenting two d
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/zaeemkhan1999/AB-Testing-React-App.git
 
 2. **Install Dependencies:**
    ```bash
