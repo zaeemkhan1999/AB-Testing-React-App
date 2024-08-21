@@ -16,7 +16,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   form: formReducer
 });
-
+//@ts-ignore
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({

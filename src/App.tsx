@@ -7,6 +7,7 @@ import Form2 from "./components/form2"
 
 const FormPage = () => {
   const dispatch = useDispatch()
+  //@ts-ignore
   const { formId } = useSelector(state => state.form)
 
   const getIp = async () => {
