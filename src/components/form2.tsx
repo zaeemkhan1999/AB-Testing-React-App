@@ -6,7 +6,6 @@ import { cn } from "../lib/utils";
 import {
   IconBrandGithub,
   IconBrandGoogle,
-  IconBrandOnlyfans,
 } from "@tabler/icons-react";
 
 export default function SignupFormDemo() {
@@ -24,11 +23,21 @@ export default function SignupFormDemo() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Tyler" type="text" />
+            <Input id="firstname" placeholder="Alex" type="text" />
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
+            <Input id="lastname" placeholder="Williams" type="text" />
+          </LabelInputContainer>
+        </div>
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+          <LabelInputContainer>
+            <Label htmlFor="country">Country</Label>
+            <Input id="country" placeholder="USA" type="dropdown" />
+          </LabelInputContainer>
+          <LabelInputContainer>
+            <Label htmlFor="city">City</Label>
+            <Input id="city" placeholder="New York" type="text" />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
@@ -39,15 +48,6 @@ export default function SignupFormDemo() {
           <Label htmlFor="password">Password</Label>
           <Input id="password" placeholder="••••••••" type="password" />
         </LabelInputContainer>
-        <LabelInputContainer className="mb-8">
-          <Label htmlFor="twitterpassword">Your twitter password</Label>
-          <Input
-            id="twitterpassword"
-            placeholder="••••••••"
-            type="twitterpassword"
-          />
-        </LabelInputContainer>
-
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
